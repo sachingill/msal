@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+
+  <div class="toolbar-spacer"></div>
+
+  @if (!loginDisplay) {
+  <button mat-raised-button (click)="loginRedirect()">Login</button>
+  }
+
+  @if (loginDisplay) {
+  <button mat-raised-button (click)="logout()">Logout</button>
+  }
+
+</mat-toolbar>
